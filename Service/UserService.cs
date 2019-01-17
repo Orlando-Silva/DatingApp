@@ -34,6 +34,11 @@ namespace Service
                 .FirstOrDefault()
                 ?? throw new ArgumentNullException($"Cannot find user. ID: { id }.");
         }
+
+        public void UpdateUser()
+        {
+            UnityOfWork.SaveChanges();
+        }
         #endregion
     }
 }

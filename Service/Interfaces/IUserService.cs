@@ -7,5 +7,6 @@ namespace Service.Interfaces
     {
         IList<User> GetUsers();
         User GetUser(int id);
+        void UpdateUser();
     }
 }

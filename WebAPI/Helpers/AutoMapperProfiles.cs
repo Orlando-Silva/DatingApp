@@ -31,7 +31,8 @@ namespace WebAPI.Helpers
                 });
 
             CreateMap<Photo, PhotosForUserDetailsDTO>();
-                
+            CreateMap<UserForUpdateDTO, User>();
+
         }
     }
 }
